@@ -48,7 +48,17 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://tywe.herokuapp.com',
+        url: 'http://www.tylerwengerd.com',
+        mail: {
+            transport: 'SMTP',
+                options: {
+                    service: 'Mailgun',
+                    auth: {
+                        user: process.env.MAILGUN_SMTP_LOGIN,
+                        pass: process.env.MAILGUN_SMTP_PASSWORD
+                    }
+                }
+        },
         database: {  
             client: 'postgres',
             connection: {
