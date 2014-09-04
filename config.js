@@ -48,7 +48,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://tywe.herokuapp.com'
+        url: 'http://tywe.herokuapp.com',
         database: {  
             client: 'postgres',
             connection: {
