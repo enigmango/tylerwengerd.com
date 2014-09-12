@@ -370,7 +370,7 @@ a.archive-link {
   padding: 0.5em 0;
 }
 .pagination a {
-  color: #3498db;
+  color: #8244DB; /* #3498db; tw*/
 }
 .older-posts,
 .newer-posts {
@@ -415,7 +415,7 @@ a.archive-link {
   /* Hide GitHub attribution */
 }
 .gist .gist-file .gist-meta a:visited {
-  color: #3498db !important;
+  color: #8244DB !important; /* #3498db !important; tw*/
 }
 .gist .gist-file .gist-data {
   background: #fdfdfd !important;
