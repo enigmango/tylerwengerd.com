@@ -30,7 +30,7 @@ h1,
 }
 a,
 a:visited {
-  color: #813AC9; /* #3498db; #8E0CF2; #0CF29C; #76E80C; #AA0CF2;*/
+  color: #db8c16; /*#813AC9; #3498db; #8E0CF2; #0CF29C; #76E80C; #AA0CF2;*/
   text-decoration: none;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
