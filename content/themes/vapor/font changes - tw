@@ -1,0 +1,5 @@
+font changes:
+
+merriweather to Josefin Slab in h1 ()
+Open Sans COndensed to Crushed (h2s, footer, etc)
+merriweather to Josefin sans in p, etc. (body, p) (screen.css 17), size from 18 to 20 (screen.css l42)
