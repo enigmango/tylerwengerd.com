@@ -49,6 +49,11 @@ dd {
   font-weight: 100;
   line-height: 30px;
 }
+p.caption {
+  text-align: center;
+  font-size: 1.1em;
+  font-style: italic;
+}
 dt {
   font-weight: 400;
 }
