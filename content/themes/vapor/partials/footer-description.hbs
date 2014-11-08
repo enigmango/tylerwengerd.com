@@ -3,7 +3,8 @@
 <div id="slogan"></div>
 
 <script>
-	var sloganArray = ["I'm just saying, how do you pick, you know",
+	var sloganArray = ["This is the secret one no one will see, are you going to spoil it for yourself and just read the rest? Up to you, cool either way, I'm too lazy to figure out how to obscure them",
+		"I'm just saying, how do you pick, you know",
 		"All words are written because they sound good, any meaning is purely coincidental",
 		"This page also available digitally",
 		"You will make winners of us all",
@@ -33,12 +34,24 @@
 		"Judgement",
 		"Burma Shave",
 		"Oh Gus some day your super sniffer will be your undoing",
-		"DISPOSE THE WORLD"];
+		"DISPOSE THE WORLD",
+		"Everything will turn to dust, even that weird car on the street outside your window",
+		"We are also a fully-featured daycare",
+		"Flatbread? Who do you even think you're talking to",
+		"Just another day",
+		"So -- it's probably elephants",
+		"My roadside assistance cost jumped up like three dollars, I'm like uh what well I guess that's fine, I've used it a couple times so it's still worth it I guess",
+		"A jigsaw may be useful here",
+		"PNRDD2D1",
+		'All this time I thought it was 'No trouble"',
+		"Don't approve, never approve, that'll show 'em",
+		"People in suits being pretty happy, I haven't forgetten about you",
+		"A somber look at bushels"];
 	// get range of indexes to choose from
 	var sloganIndex = sloganArray.length - 1;
 
-	// choose between 0 and last index in array
-	var randomIndex = Math.floor(Math.random() * sloganIndex)
+	// choose between 1 and last index in array
+	var randomIndex = Math.floor(Math.random() * sloganIndex) + 1
 
 	document.querySelector('#slogan').innerHTML = sloganArray[randomIndex];
 
