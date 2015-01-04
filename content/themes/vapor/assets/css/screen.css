@@ -1,6 +1,6 @@
 
 /* @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300'); tw */
-@import url('http://fonts.googleapis.com/css?family=Crushed|Josefin+Slab|Josefin+Sans|Open+Sans&subset=latin,latin-ext,cyrillic-ext,cyrillic');
+@import url('http://fonts.googleapis.com/css?family=Crushed|Crimson+Text|Quattrocento+Sans|Open+Sans&subset=latin,latin-ext,cyrillic-ext,cyrillic');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 /* === Core Styles === */
 body {
@@ -24,7 +24,7 @@ p,
 li,
 dt,
 dd {
-  font-family: "Josefin Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
 h1,
 .post-meta {
@@ -80,7 +80,7 @@ p code {
 }
 h1 {
   color: #151515;
-  font-family: "Josefin Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Crimson Text", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
@@ -169,7 +169,7 @@ section.share p {
   margin: 0;
 }
 section.author h4 {
-  font-family: "Josefin Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
+  font-family: "Crimson Text", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
   font-weight: 400;
   margin-bottom: 4px;
 }
