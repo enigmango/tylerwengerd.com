@@ -1,0 +1,756 @@
+/* Table of Content
+==================================================
+	#Site Styles
+	#Typography
+	#Navigation
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+body {
+    background: #fff;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: #000;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-space {
+ padding-top: 25px;
+}
+
+.logo a{
+	display: block;
+	width: 287px;
+	height: 28px;
+	/* background: url(../images/logo.png) no-repeat; */
+	float: left;
+	padding-bottom: 20px;
+	margin-top: 9px;
+	/* Nicolas Gallagher Image replacement technique */
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.logo-text{
+	display: block;
+	float: left;
+	font-size: 48px;
+	font-family: Crushed, Helvetica, Arial, sans-serif;
+	margin-top: 9px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.logo-text a{
+	text-decoration: none;
+}
+
+.wrap-header{
+	margin-top: 30px;
+}
+
+hr { 
+	border: solid #000; 
+	border-width: 3px 0 0; 
+	clear: both; 
+}
+
+.black:hover {
+	background-color: #000;
+}
+
+.black:hover a {
+	background-color: #000;
+}
+.white:hover {
+	color: #fff
+}
+.white:hover a {
+	color: #fff
+}
+
+.right{
+	display: inline;
+	float: right;
+	text-align: right;
+}
+
+ul.share-icons {
+	text-align: center;
+}
+
+ul.share-icons a:hover {
+	color: #e70000;
+}
+
+ul.share-icons-left {
+	
+}
+
+ul.share-icons-left a:hover {
+	color: #e70000;
+}
+
+
+blockquote {margin:0 0 30px 0;border: 0px; color:#000;}
+blockquote p.blockquote-cite{color:#ccc;margin-top:20px;}
+blockquote.quote-open-border-top {font:20px/25px Helvetica, Arial, sans-serif;background: url(../images/quotation-black.png) 0 15px no-repeat;border-top:5px solid; padding-top:75px;margin-top:5px;}
+blockquote.quote-open-border-top.quote-color-black{background: url(../images/quotation-black.png) 0 15px no-repeat;}
+blockquote.quote-open-border-top p.blockquote-cite span{font:13px/13px Arial, sans-serif;font-style:italic;margin-top:20px;background:#000; padding:2px 10px;}
+blockquote.quote-open-border-top p:last-child {margin-bottom:0;}
+
+
+.submit {float:left;font:12px Helvetica, Arial, sans-serif;font-weight:normal;color:#fff !important;background:#111;
+text-decoration:none;text-transform:uppercase;padding:10px 24px;border:0;cursor:pointer;outline:0;margin:0 0 16px 0;-webkit-appearance: none;border-bottom:0 !important;text-shadow:none;}
+
+/* colors*/
+.submitTheme{color:#fff !important;
+background:#e70000 !important;}
+.submitBlack{color:#fff !important;
+background:#000000 !important;}
+
+/* sizes*/
+.submitSmall {height:40px;font-size:11px;line-height:40px;}
+.submitLarge {height:50px;font-size:13px;line-height:50px;}
+.submit:hover, .submit:focus, .submit:active {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter: alpha(opacity=80);opacity: 0.8;}
+.submit:active {position:relative;top:1px;}
+		
+
+.author-image-inner {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e7e7e7;
+    /* border-radius: 3px; */
+    background-position: center center;
+    background-size: cover;
+}
+
+.author-image {
+    float: left;
+    width: 80px;
+	margin-right: 20px;
+}
+
+.author-bio {
+    margin-left: 30px;
+    font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+.author-name {
+    font-weight: 700;
+	padding-left: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: underline;
+	color: #fff;
+}
+
+.author-box {
+    overflow: hidden;
+    padding: 15px;
+    background-color: #000;
+	margin-bottom: 25px;
+	margin-top: 5px;
+	border: 1px solid #fff;
+}
+
+
+
+
+/* #Typography
+================================================== */
+
+
+a{
+	text-decoration: none;
+	color: #000;
+	outline: 0;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #000;
+	outline: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+p{
+	font-size: 16px;
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "AvenirNext-Bold";
+    font-weight: normal !important;
+	color: #000;
+    padding-top: 0.24267em;
+    line-height: 1.027em;
+    padding-bottom: 0.24267em;
+	-webkit-font-smoothing: antialiased;
+}
+h1 {
+    font-size: 100px;
+	letter-spacing: -2px;
+}
+h1 em {
+    letter-spacing: -2px;
+}
+h2 {
+    font-size: 68px;
+	letter-spacing: -2px;
+	color: #000;
+}
+h2.center {
+	text-align: center;
+    font-size: 68px;
+	letter-spacing: -2px;
+	color: #000;
+}
+h3 {
+    font-size: 34px;
+	color: #000;
+	padding-bottom: 15px;
+}
+h4 {
+    font-size: 29px;
+	color: #000;
+}
+h5 {
+    font-size: 24px;
+	color: #000;
+	padding-top: 15px;
+}
+h6 {
+    font-size: 18px;
+	color: #000;
+	padding-top: 15px;
+}
+li{
+	line-height: 1.027em;
+}
+
+.byline {
+text-align: center;
+}
+
+.headline-front{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 72px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-left: 15px;
+	color: #000;
+	border-top: 3px solid #000;
+}
+
+.last-post  {
+	border-bottom: 3px solid #000;
+}
+
+.headline-95{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 95px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+.headline-72{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 72px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-68{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+.headline-48{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 48px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+.headline-32{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: .5px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-top: 13px;
+	/*color: #010012;  check this color again */
+	color: #000;
+	border-top: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
+}
+
+.headline-quote{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 48px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 25px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+.headline-center{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+
+/* #Navigation
+================================================== */
+nav.primary{
+	float: right;
+}
+
+nav.primary ul{
+	float: right;
+	margin-top: 15px;
+}
+
+nav.primary ul li{
+	float: left;
+	margin-left: 20px;
+	color: #000;
+}
+
+nav.primary ul li a{
+	display: inline;
+	padding-right: 20px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	color: #000;
+}
+
+nav.primary ul li:last-child a{
+	padding: 0;
+}
+
+nav.primary ul li a:hover{
+	color: #cbcbcb;
+}
+
+nav.footer{
+	float: right;
+}
+
+nav.footer ul{
+	float: right;
+}
+
+nav.footer ul li{
+	float: left;
+	margin-left: 20px;
+	color: #000;
+}
+
+nav.footer ul li a{
+	display: inline;
+	padding-right: 20px;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	color: #000;
+}
+
+nav.footer ul li:last-child a{
+	padding: 0;
+}
+
+nav.footer ul li a:hover{
+	color: #cbcbcb;
+}
+
+
+/* #Make Images Responsive
+================================================== */
+img, img.scale-with-grid { 
+	outline: 0;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+
+/* #Page Styles
+================================================== */
+
+
+.post-nav-left {
+	display: inline;
+	float: left;
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 24px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+	
+}
+
+.post-nav-left a:hover {
+	color: #cbcbcb;
+}
+
+.post-nav-right {
+	display: inline;
+	float: right;
+	text-align: right;
+	font-family: "AvenirNext-Bold";
+	font-size: 24px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+	
+}
+
+.post-nav-right a:hover {
+	color: #cbcbcb;
+}
+
+
+/* #Media Queries
+================================================== */
+@media only screen and (max-width: 900px) {
+
+.headline-front{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-left: 15px;
+	color: #000;
+	border-top: 3px solid #000;
+}
+
+.headline-95{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-72{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 72px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-68{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-48{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 48px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-32{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: .5px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-top: 13px;
+	color: #000;
+	border-top: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
+}
+
+.headline-center{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 48px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+	h1{
+	font-size: 72px;
+
+	}
+
+	h2 {
+	font-size: 52px;
+	}
+	h2.center {
+	font-size: 52px;
+	}
+	
+	h3 {
+	font-size: 32px;
+	}
+
+
+	h5 {
+    font-size: 18px;
+	color: #000;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.headline-front{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+	color: #000;
+	border-top: 3px solid #000;
+}
+
+.headline-95{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 48px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-72{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 72px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-68{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 68px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-48{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.headline-32{
+	text-align: left;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: .5px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-top: 13px;
+	color: #000;
+	border-top: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
+}
+
+.headline-center{
+	text-align: center;
+	font-family: "AvenirNext-Bold";
+	font-size: 32px;
+	letter-spacing: -2px;
+	font-weight: normal !important;
+	line-height: 1.027em;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	/*color: #010012;  check this color again */
+	color: #000;
+}
+
+	h1{
+	font-size: 48px;
+
+	}
+
+	h2 {
+	font-size: 32px;
+	}
+	
+	h2.center {
+	font-size: 32px;
+	}
+	
+	h3 {
+	font-size: 24px;
+	}
+
+
+	h5 {
+    font-size: 18px;
+	color: #000;
+	}
+
+}
+
+
+
+/* #Font-Face
+================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Crushed);
+
+@font-face {
+    font-family: "AvenirNext";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvenirNext.eot);
+    src: url("../fonts/AvenirNext.eot?#iefix") format("ie9-skip-eot"), url("../fonts/AvenirNext.woff") format("woff"), url("../fonts/AvenirNext.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirNext-Italic";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvenirNext-Italic.eot);
+    src: url("../fonts/AvenirNext-Italic.eot?#iefix") format("ie9-skip-eot"), url("../fonts/AvenirNext-Italic.woff") format("woff"), url("../fonts/AvenirNext-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirNext-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvenirNext-Medium.eot);
+    src: url("../fonts/AvenirNext-Medium.eot?#iefix") format("ie9-skip-eot"), url("../fonts/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AvenirNext-Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/AvenirNext-Bold.eot);
+    src: url("../fonts/AvenirNext-Bold.eot?#iefix") format("ie9-skip-eot"), url("../fonts/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext-Bold.ttf") format("truetype");
+}

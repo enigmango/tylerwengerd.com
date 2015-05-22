@@ -1,0 +1,12 @@
+		<footer>
+		<!-- Footer Nav -->
+			<div class="twelve columns">
+				<nav class="nav footer">
+					<ul>
+						<li><a href="{{@blog.url}}/about-us">about us</a></li>
+						<!-- <li><a href="page url">page slug</a></li> -->
+					</ul>
+				</nav>
+			</div>
+		<!-- End Footer Nav -->
+		</footer>

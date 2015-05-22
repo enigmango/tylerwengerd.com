@@ -1,0 +1,30 @@
+{{!< default}}
+
+    {{#post}}
+		
+		<!-- Title -->
+		<div class="twelve columns">
+			<hr />
+			<h1 class="headline-95">{{{title}}}</h1>
+			<p class="byline">by {{author.name}} on {{date published_at format="MMMM DD, YYYY"}}</p>
+			<hr />
+		</div>
+		<!-- End Title -->
+
+		<!-- Post Content -->
+		<div class="twelve columns">
+			{{content}}
+		</div>
+		<!-- End Post Content -->
+
+		{{> social-icons}}
+		
+		{{> author}}
+		
+		<!-- {{> disqus}} -->
+		
+		<div class="twelve columns">
+		<hr />
+		</div>
+		
+	{{/post}}
