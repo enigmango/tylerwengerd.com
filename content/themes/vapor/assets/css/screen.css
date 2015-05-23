@@ -1,6 +1,6 @@
 
 /* @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300'); tw */
-@import url('//fonts.googleapis.com/css?family=Faster+One|Lato:900|Crushed|Source+Code+Pro|Open+Sans&subset=latin,latin-ext,cyrillic-ext,cyrillic');
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro|Faster+One|Lato:900|Crushed|Source+Code+Pro&subset=latin,latin-ext,cyrillic-ext,cyrillic');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 /* === Core Styles === */
@@ -25,7 +25,7 @@ p,
 li,
 dt,
 dd {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 h1,
 .post-meta {
@@ -171,7 +171,7 @@ section.share p {
   margin: 0;
 }
 section.author h4 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   margin-bottom: 4px;
 }
@@ -490,7 +490,7 @@ a.archive-link {
 /* Tables */
 table {
   width: 100%;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   border-collapse: collapse;
   margin: 1em 0 3em;
 }
